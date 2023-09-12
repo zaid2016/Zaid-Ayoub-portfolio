@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaid Ayoub Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69875c99c7.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Zaidlogo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="web">Web Developer</p>
+                <h1>Hello, I'm <span>Zaid</span><br>Ayoub from Tempe, Arizona</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------About Section----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/AboutMe.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Zaid Ayoub, I'm a Web Developer and a Data Analyst from Tempe Arizona.
+                    I have been pursuing this field for the past several years, I'm an 
+                    avid lifelong learner, with the desire to improve and innovate on my work. 
+                    I wish to create things that will make a impact to improve the 
+                    business needs in this advancing technological world.</p>
+
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div> 
+
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        <li><span>Data Analytics</span><br>Designing business data dashboards and interpreting/analyzing data for business needs</li>
+                    </ul> 
+                   </div>
+
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>November 2022 - current</span><br>Freelance Web Developer</li>
+                        <li><span>April 2023 - current</span><br>Software Development Apprentice at Correlation One</li>
+                        <li><span>2021 - June 2023</span><br>BI Quality Process Assistant at Amazon Logistics</li>
+                    </ul> 
+                   </div>
+
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Software Engineering and Computer Science at Arizona State University</li>
+                        <li><span>September 2023</span><br>Software Development Certificate from Correlation One</li>
+                        <li><span>September 2023</span><br>Data Analytics Certificate from Codecadmy</li>
+                    </ul> 
+                   </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+<!--------------Skills-------------->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Experince in designing and building websites based on the business needs</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Experince in designing and building websites based on the business needs</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>Experince in designing and building websites based on the business needs</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Analytics</h2>
+                    <p>Experince in designing and building websites based on the business needs</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------portfolio--------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>Data Analytics Project</h3>
+                    <p>Analysing the data of medical insurance</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Ecomerrce website</h3>
+                    <p>Website for a realestate company</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.jpg">
+                <div class="layer">
+                    <h3>UX/UI Design project</h3>
+                    <p>Design project for ecommerce website</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- -------Image Slider---------- -->
+
+<h1 class="slidertxt">Image Slider</h1>
+
+  <div class="slidercontainer">
+    <div id="slider">
+      <img src="Images/work-1.jpg" alt="Image 1">
+      <img src="Images/work-2.jpg" alt="Image 2">
+      <img src="Images/work-3.jpg" alt="Image 3">
+      <img src="Images/work-4.jpg" alt="Image 4">
+      <button id="prev" class="sliderbtn">&lt;</button>
+      <button id="next" class="sliderbtn">&gt;</button>
+    </div>
+  </div>
+
+<!-- ---------Fade and Scroll-- -------- -->
+
+<section id="fader">
+<div class="fadecontainer">
+<div class="animated fadeInLeft"></div>
+</div>
+</section>
+
+<!-- ------------GOOGLE MAPS------------- -->
+
+<div class="mapsContainer">
+    <h1 class="hmaps">Embed Location Map</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106598.28657084517!2d-112.01050173724433!3d33.39203850247713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0898a6aa80e3%3A0xa2dd4aad392cb41f!2sTempe%2C%20AZ!5e0!3m2!1sen!2sus!4v1694467099850!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+<!-- -----------Contact---------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>zedekiahtech@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/16027272200"><i class="fa-brands fa-whatsapp" style="color: #3fe633;"></i></a>
+                    <a href="www.linkedin.com/in/zaidayoub9"><i class="fa-brands fa-linkedin" style="color: #064bc1;"></i></a>
+                </div>   
+                <a href="Zaid Ayoub Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg">hello</span>
+            </div> 
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Zaid Ayoub</p>
+    </div>
+</div>
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links")
+var tabcontents = document.getElementsByClassName("tab-contents")
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbxVrsTj52bCltd29YMCwmBxkYc_YNys4sRcDmVwzMKJ5WW8zaNFBtUtm0WXNBnMdODdXg/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <!-- ---------------Image Slider-------------- -->
+
+  <script src="./script.js"></script>
+
+
+
+</body>
+</html>

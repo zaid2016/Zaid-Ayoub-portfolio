@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaid Ayoub Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69875c99c7.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Zaidlogo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="products.html">Skills</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hello, I'm <span>Zaid</span><br>Ayoub from Tempe, Arizona</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------About Section----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/AboutMe.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Zaid Ayoub, I'm a Web Developer and a Data Analyst from Tempe Arizona.
+                    I have been pursuing this field for the past several years, I'm an 
+                    avid lifelong learner, with the desire to improve and innovate on my work. 
+                    I wish to create things that will make a impact to improve the 
+                    business needs in this advancing technological world.</p>
+
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div> 
+
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        <li><span>Data Analytics</span><br>Designing business data dashboards and interpreting/analyzing data for business needs</li>
+                    </ul> 
+                   </div>
+
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>November 2022 - current</span><br>Freelance Web Developer</li>
+                        <li><span>April 2023 - current</span><br>Software Development Apprentice at Correlation One</li>
+                        <li><span>2021 - June 2023</span><br>BI Quality Process Assistant at Amazon Logistics</li>
+                    </ul> 
+                   </div>
+
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Software Engineering and Computer Science at Arizona State University</li>
+                        <li><span>September 2023</span><br>Software Development Certificate from Correlation One</li>
+                        <li><span>September 2023</span><br>Data Analytics Certificate from Codecadmy</li>
+                    </ul> 
+                   </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+        </script>
+        
+        <script>
+        
+            var sidemenu = document.getElementById("sidemenu");
+        
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+        
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        
+        </script>
+
+</body>
+</html>
